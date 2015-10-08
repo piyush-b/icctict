@@ -9,14 +9,8 @@ body{
 .fullimg{
 width:100%;
 }
-.rorder{
-border-right: solid 1px #eee !important;
-}
-.tborder{	
-border-top: solid #0972b7 2px !important;
-}
-.lorder{
-border-left: solid 1px #eee !important;
+.mob_visible{
+ display: none;   
 }
 
 .gap{
@@ -108,7 +102,11 @@ text-decoration:underline;
 }
 }
 @media screen and (max-width:767px){
-.sidebar{display:none;}
+    .mob_visible{
+        
+     display: block;   
+    }
+.sidebar{display:none !important;}
 
 .navbar-inverse .navbar-collapse{
  border: solid 1px #fffffd;    
