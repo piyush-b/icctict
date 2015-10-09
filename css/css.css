@@ -7,6 +7,11 @@ body{
     color:#455A64 !important;
 
 }
+.mob_visible{
+    
+display: none;
+    padding-top: 10px;
+}
 .fullimg{
 width:100%;
 }
@@ -21,7 +26,7 @@ margin:0px;
 .imgdim{
 height:150px;
 width:150px;
-margin-left: 15px;
+/*margin-left: 15px;*/
 }
 ul{
 	list-style:none;
@@ -100,12 +105,21 @@ font-weight:bold;
     color: #424242 !important;
 }
 @media screen and (max-width:520px){
-    
+    #speakers p{
+        
+     text-align: center;   
+    }
      #impdates{
    height: 500px !important;
 }
 }
 @media screen and (max-width:767px){
+    #myCarousel{
+     display: none !important;
+    }
+    .mob_visible{
+     display: block !important;   
+    }
 .sidebar{display:none;}
 
 .navbar-inverse .navbar-collapse{
@@ -181,6 +195,7 @@ color:white !important;
 .divider-color         { border-color: #B6B6B6; }
 .whitebg{background:#ffffff !important;}
 .whitbg{background:#ffffff !important;}
+.whitetext{color:white !important;}
 article,p{
 	text-align:justify;
 	color: #727272;

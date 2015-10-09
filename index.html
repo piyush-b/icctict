@@ -16,6 +16,13 @@
     <script type="text/javascript" src="js/ember-data.js"></script>
     <script>
      $(function(){
+         
+$(document).ready(function () {
+  $("#topul li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
+});
+
         
 var fixHeader =180;
   $(window).scroll(function() {
@@ -49,24 +56,28 @@ function getCurrentScroll() {
 <i class="fa fa-arrow-right fa-2x" id="arrowright" ></i>-->
 </div>    
     
-<div class="container-fluid zeropad">
+<div class="container-fluid ">
 <div class="row">
-<div class="col-md-12">
+<div class="col-md-12 zeropad">
 <img src="img/head.jpg" class="img-responsive"></img>
 </div>
-<div class="container-fluid">
+<div class="container-fluid zeropad">
 <!-- Navigation -->
     <nav class="navbar-inverse default-primary-color white-text" role="navigation" style="box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
+                <div class="row">
+                    <div class="col-md-3">
+                <!--img src="img/icctict_logo.png" style="height:50px; width:50px; margin:0;" class="mob_visible" /-->
                 <button type="button" class="navbar-toggle bcolor" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                
+                        </div>
+                </div>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -111,7 +122,21 @@ function getCurrentScroll() {
 </div>
 <div class="container-fluid col-md-10 col-md-offset-1">   
     
+    <div class="col-md-4 whitbg mob_visible">
     
+       <center><h3>IMPORTANT DATES</h3></center>
+<ul>
+    <li><br></li>
+  <li class="alert-danger">Full Paper <!--a href="http://edas.info/N19593">Submission</a-->Submission Date: <br><strong>31<sup>st</sup> October, 2015 <strike>   30<sup>th</sup> September, 2015</strike></strong></li>
+  <!--li class="alert-danger">Last Date of receiving full paper: <br><strong>31<sup>st</sup> October, 2015   <strike> 30<sup>th</sup> September, 2015</strike></strong></li-->
+    <li><br></li>
+	<li class="alert-success">E-mail notification of paper acceptance: <br><strong>15<sup>th</sup> December, 2015</strong></li>
+	<li class="alert-success">Final Paper <!--a href="http://edas.info/N19593">Submission</a-->Submission Date: <br><strong>15th January, 2016 </strong></li>
+	<li class="alert-success">Last Date for registration :<br><strong>2<sup>nd</sup> February, 2016</strong></li>
+  <li class="alert-success">Date of Conference :<br><strong>11<sup>th</sup> - 13<sup>th</sup> March, 2016</strong></li>
+</ul>
+    <br>
+    </div>
     <div class="col-md-4 sidebar material whitbg" id="impdates">
             <center><h3>IMPORTANT DATES</h3></center>
 <ul>
@@ -159,10 +184,30 @@ function getCurrentScroll() {
     {{outlet}}
     </div>
 </div>
-<div class="container-fluid zeropad">
+<div class="container-fluid ">
 <div class="row">
 <div class="col-md-12">
-<img src="img/sponsor2.png" class="img-responsive fullimg"></img>
+    <footer class="default-primary-color whitetext">
+        <ul>
+        <li>ddnv</li>
+        <li>ddnv</li>
+        </ul>
+        <div class="default-primary-color col-md-5 col-md-offset-7 icons">
+                     <ul> 
+                        <li><a target="_blank" href="#">
+                       <img src="img/facebook_circle.png"> &nbsp;</a></li>
+                        <li><a target="_blank" href="#">
+                       <img src="img/linkedin_circle.png"> &nbsp;</a></li>
+                       <li><a target="_blank" href="#">
+                       <img src="img/twitter_circle.png" > &nbsp;</a></li>
+                       <li><a target="_blank" href="#">
+                       <img src="img/instagram_circle.png" > &nbsp;</a></li>
+                       <li><a target="_blank" href="#">
+                       <img src="img/youtube_circle.png" > &nbsp;</a></li>
+                     </ul>
+                </div>
+    </footer>
+<!--img src="img/sponsor2.png" class="img-responsive fullimg"></img-->
 </div>
 </div>
 </div>
@@ -303,7 +348,7 @@ The Conference endeavours to provide a forum for researchers, scientists, practi
          
          <p><strong>Dr. Prabhat. K. Mahanti<br> </strong> 
 
-<small>Professor<br> Computer Science,<br> University of New Brunswick, Canada</small><br><br></p>
+<small>Professor<br> Computer Science,<br> University of New Brunswick,<br> Canada</small><br><br></p>
      </div>
      <div class="col-md-4">
 		<img src="img/sanjeev.PNG" id="t4" class="img-responsive imgdim thumbnail">
@@ -332,7 +377,7 @@ Professor<br> Computer Engineering,<br>
 
 <small>Senior Lecturer<br>School of Computing,<br>
 
-National University of Singapore, Singapore</small><br><br></p>
+National University of Singapore,<br> Singapore</small><br><br></p>
      
      </div>
      <div class="col-md-4">  
@@ -342,7 +387,7 @@ National University of Singapore, Singapore</small><br><br></p>
 
 <small> Professor and Chairman<br>Department of Computer 
 
-              Science, Winona State University,<br> United States of America</small><br><br></p>
+              Science,<br> Winona State University,<br> United States of America</small><br><br></p>
     
      </div>
      </div>
@@ -440,11 +485,14 @@ NUS, Singapore</h3>
 <div class="row rborder lborder">
 <div class="col-md-12 rorder ">
 <article>
+    <div class="row">
+        <h3><center>COMMITTEE</center></h3>
+    </div>
 <div class="row">
 				<div class="col-md-12">
   
   <ul>
-  <li></li><li><br></li><li><strong><br><br>PATRON</strong></li>
+  <li></li><li><strong><br><br>PATRON</strong></li>
   <li>Prof. Anil K. Tyagi,</li>
   <li>Vice Chancellor, Guru Gobind Singh Indraprastha University, Delhi (India)</li>
   </ul>
@@ -885,6 +933,7 @@ NUS, Singapore</h3>
 </div>
 </script>
 <script type='text/x-handlebars' data-template-name='guidlines'>
+    <div class="row gap">
     <div class="col-md-12 rborder lborder">
 <article>
 
@@ -930,20 +979,22 @@ NUS, Singapore</h3>
     
 </article>
 </div>
+        </div>
     </script>
 <script type='text/x-handlebars' data-template-name='program'></script>    
 <script type='text/x-handlebars' data-template-name='registration'>
+    <div class="row gap">
     <div class="col-md-12 rborder lborder">
 <article>
 
      <h3><center>REGISTRATION</center></h3>
 	 <br>
 						<p>All delegates are required to register for the conference as per the details:</p>
-						<table class="register">
+						<table>
 						<tr>
-						<td><p>Type of Delegate</p></td>
-						<td><p>IEEE/CSI/IETE/ISTE Members</p></td>
-						<td><p>Non-Members</p></td>
+						<td width="45%"><p>Type of Delegate</p></td>
+						<td width="45%"><p>IEEE/CSI/IETE/ISTE Members</p></td>
+						<td width="10%"><p>Non-Members</p></td>
 						</tr>
 						<tr>
 						<td><p><strong>Indian Delegate</strong></p></td>
@@ -972,7 +1023,7 @@ NUS, Singapore</h3>
 						<td><p>&#36; 150</p></td>
 						</tr>
 						</table>
-						<p>Fee shall be credited to the university account.<br />: Modalities to be finalized.</p><br />
+						<p>Fee shall be credited to the university account.<br /><sup>*</sup> Modalities to be finalized.</p><br />
 			  
 			  
 			  <h3><center>INSTRUCTIONS</center></h3>
@@ -993,8 +1044,10 @@ NUS, Singapore</h3>
     
 </article>
 </div>
+        </div>
     </script>    
 <script type='text/x-handlebars' data-template-name='contact'>
+    <div class="row gap">
     <div class="col-md-12 rorder">
 <article>
 <h3><center>CONFERENCE SECRETARIAT</center></h3>
@@ -1053,7 +1106,9 @@ NUS, Singapore</h3>
 						<span class="image featured ctborder" ><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3503.1519842966186!2d77.02097200000003!3d28.595216999999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd08624613cd%3A0x75b127f70af28c04!2sGuru+Gobind+Singh+Indraprastha+University!5e0!3m2!1sen!2sin!4v1418183220241"   height="580" frameborder="0" style="width:100%;border:0"></iframe></span>
 
 </article>
-</div><!--
+</div>
+</div>
+<!--
 <div class="col-md-4 rborder lborder">
     <br />
     VENUE CONTACT &gt;&gt;<br />
