@@ -10,7 +10,10 @@ body{
 .mob_visible{
     
 display: none;
+<<<<<<< HEAD
     padding-top: 10px;
+=======
+>>>>>>> master
 }
 .fullimg{
 width:100%;
