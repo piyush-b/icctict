@@ -8,12 +8,8 @@ body{
 
 }
 .mob_visible{
-    
-display: none;
-<<<<<<< HEAD
     padding-top: 10px;
-=======
->>>>>>> master
+display: none;
 }
 .fullimg{
 width:100%;
@@ -25,6 +21,7 @@ padding-left: 0px !important;
 
 .gap{
 margin:0px;
+    padding-bottom: 10px;
 }
 .imgdim{
 height:150px;
@@ -60,6 +57,9 @@ opacity:0.7;
 display:none;
 z-index:999999999;
 }
+.disp{
+ display:none;   
+}
 #frame{
 
 display:none;
@@ -70,18 +70,37 @@ height: 95%;
 position: fixed;
 left: 50%;
 margin-left: -37.5%;
-padding-top:30px;
-padding-bottom:30px;
+padding-top:10px;
+/*    
+padding-bottom:10px;
 padding-right:10px;
-padding-left:10px;
-margin-top: 50px;
+padding-left:10px;*/
+margin-top: 10px;
 z-index:999999999;
 }
-#mainimg{
-width:90%;
-height:90%;
-margin-left:20px;
-z-index:999999999;
+
+.keynote{
+text-align: justify;
+font-size: 16px;
+line-height: 1.6;
+padding: 60px;
+}
+
+@media screen and (max-width:767px){
+
+#mainimg {
+    z-index: 999999999;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+.keynote{
+  text-align: justify;
+font-size: 10px;
+line-height: 1.2;
+font-weight: lighter;
+padding: 10px;  
+}
 }
 
 #overlay:hover{
@@ -115,6 +134,12 @@ font-weight:bold;
      #impdates{
    height: 500px !important;
 }
+    
+#bim2,#san2,#deb2,#lui2,#pra2,#abh2{
+font-size: 10px;
+    line-height: 1.2;
+    font-weight: lighter;
+}
 }
 @media screen and (max-width:767px){
     #myCarousel{
@@ -122,6 +147,9 @@ font-weight:bold;
     }
     .mob_visible{
      display: block !important;   
+    }
+    #header1{
+        display: none;
     }
 .sidebar{display:none;}
 
