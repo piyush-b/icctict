@@ -23,16 +23,27 @@ $(document).ready(function () {
   });
 });
 
-        
-var fixHeader =180;
+        var h = window.innerHeight;
+         if(h > 767) {
+            var fixHeader =180;
+         }
+         else if (h > 520 && h <= 767) {
+             var fixHeader = 120;
+         }
+         else if (h <= 520) {
+             var fixHeader = 80;
+         }
   $(window).scroll(function() {
     var scroll = getCurrentScroll();
       if ( scroll >= fixHeader ) {
-
+          $("#scrollogo").css("display","block");
            $('nav').addClass('navbar-fixed-top');
+          $("#headbanner").css("display","none");
         }
         else {
+            $("#scrollogo").css("display","none");
             $('nav').removeClass('navbar-fixed-top');
+            $("#headbanner").css("display","block");
 
         }
   });
@@ -86,7 +97,7 @@ His current research interests are in the areas of Wireless Networking and Secur
 <div class="row">
 <div class="col-md-12 zeropad">
 <!--img src="img/head.jpg" class="img-responsive"></img-->
-    <div class="row default-primary-color">
+    <div id="headbanner" class="row default-primary-color" style="display:block;">
 <div class="col-md-12 zeropad whitetext">
 <!--img src="img/head.jpg" class="img-responsive"></img-->
 <div style="width:15vw; float:left; "><img src="img/icctict_logo.png" class="img-responsive"></img></div>
@@ -109,9 +120,9 @@ His current research interests are in the areas of Wireless Networking and Secur
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <div class="row">
-                    <!--<div style="width:30vw; float:left">
+                    <div id="scrollogo" style="width:30vw; float:left; display:none; margin-left:5px; padding-left:5px;">
                         <img src="img/icctict_logo.png" style="height:50px; width:50px; margin:0;" class="mob_visible"/>
-                    </div>-->
+                    </div>
                     <div style="width:30vw; float:right">
                 <button type="button" class="navbar-toggle bcolor" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -166,7 +177,7 @@ His current research interests are in the areas of Wireless Networking and Secur
 <div class="container-fluid col-md-10 col-md-offset-1">   
     
     <div class="col-md-4 whitbg mob_visible">
-    <h4 class="light-primary-color" style="font-weight:bold; text-align:center;">Special track on Digital India</h4>
+        <h4 class="light-primary-color" style="font-weight:bold; text-align:center;">Special track on Digital India</h4>
        <center><h3>IMPORTANT DATES</h3></center>
 <ul>
     <li><br></li>
